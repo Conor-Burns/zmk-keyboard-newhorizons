@@ -31,10 +31,6 @@
         a-gpios = <&gpio1 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio1 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <36>;
-        status = "disabled";
-    };
-
-    &del_encoder {
         status = "okay";
     };
 
