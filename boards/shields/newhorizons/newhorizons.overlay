@@ -78,8 +78,3 @@
         // Physical key definitions omitted here for brevity
     };
 };
-
-// Turn off regulator at boot
-&ext_power {
-    regulator-boot-off;
-};
