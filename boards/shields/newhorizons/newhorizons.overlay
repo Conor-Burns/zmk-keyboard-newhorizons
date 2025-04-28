@@ -80,6 +80,6 @@
 };
 
 // Turn off regulator at boot
-&vreg {
+&ext_power {
     regulator-boot-off;
 };
