@@ -1,5 +1,8 @@
-# Copyright (c) 2025 The ZMK Contributors
-# SPDX-License-Identifier: MIT
+/*
+ * Copyright (c) 2025 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -20,6 +23,7 @@
                                 &kp LSHFT   &kp LSHFT &kp Z     &kp X     &kp C     &kp V     &kp B     &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH      &kp RSHFT     &kp UP    &kp PG_DN
                                 &kp LCTRL  &kp LGUI   &kp LALT        &kp SPACE       &kp SPACE       &kp SPACE                     &kp RALT  &mo 1     &kp RCTRL &kp LEFT  &kp DOWN  &kp RIGHT
 			>;
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 
 		fn_layer {
