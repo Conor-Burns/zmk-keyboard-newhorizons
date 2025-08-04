@@ -11,7 +11,7 @@
     transform = <&default_transform>;
 };
 
-&encoder {
+&del_encoder {
     status = "okay";
 };
 
@@ -21,7 +21,7 @@
         zmk,physical-layout = &physical_layout0;
     };
 
-    encoder: encoder {
+    del_encoder: encoder_del {
         compatible = "alps,ec11";
         a-gpios = <&gpio1 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio1 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
@@ -31,7 +31,7 @@
 
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
-        sensors = <&encoder>;
+        sensors = <&encoder_del>;
         triggers-per-rotation = <24>;
     };
 
